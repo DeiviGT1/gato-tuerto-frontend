@@ -54,8 +54,13 @@
                       {
                         "size": "750ml",
                         "price": 37.99,
-                        "img": "liquors/whiskey/scotch/buchanans/buchanans-12/buchanans-12-750ml.png",
-                        "img-gift-box": "liquors/whiskey/scotch/buchanans/buchanans-12/buchanans-12-750ml-gift-box.png"
+                        "img": "liquors/whiskey/scotch/buchanans/buchanans-12/buchanans-12-750ml.png"
+
+                      },
+                      {
+                        "size": "750ml gift",
+                        "price": 37.99,
+                        "img": "liquors/whiskey/scotch/buchanans/buchanans-12/buchanans-12-750ml-gift-box.png"
                       },
                       {
                         "size": "1L",
@@ -188,6 +193,11 @@
                         "size": "750ml",
                         "price": 34.99,
                         "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-750ml.png"
+                      },
+                      {
+                        "size": "750ml gift",
+                        "price": 34.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-750ml-gift-box.png"
                       },
                       {
                         "size": "1L",
@@ -345,6 +355,11 @@
                         "img": "liquors/whiskey/scotch/chivas/chivas-regal-12/chivas-regal-12-750ml.png"
                       },
                       {
+                        "size": "750ml gift",
+                        "price": 32.99,
+                        "img": "liquors/whiskey/scotch/chivas/chivas-regal-12/chivas-regal-12-750ml-gift-box.png"
+                      },
+                      {
                         "size": "1.75L",
                         "price": 67.99,
                         "img": "liquors/whiskey/scotch/chivas/chivas-regal-12/chivas-regal-12-175L.png"
@@ -443,8 +458,12 @@
                     {
                       "size": "750ml",
                       "price": 24.99,
-                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-black/jack-daniels-black-750ml.png",
-                      "img-gift-box": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-black/jack-daniels-black-750ml-gift-box.png"
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-black/jack-daniels-black-750ml.png"
+                    },
+                    {
+                      "size": "750ml gift",
+                      "price": 24.99,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-black/jack-daniels-black-750ml-gift-box.png"
                     },
                     {
                       "size": "1L",
@@ -963,6 +982,11 @@
                         "img": "liquors/tequila/jalisco/don-julio/don-julio-blanco/don-julio-blanco-750ml.png"
                       },
                       {
+                        "size": "750ml gift",
+                        "price": 48.99,
+                        "img": "liquors/tequila/jalisco/don-julio/don-julio-blanco/don-julio-blanco-750ml-gift-box.png"
+                      },
+                      {
                         "size": "1.75L",
                         "price": 89.99,
                         "img": "liquors/tequila/jalisco/don-julio/don-julio-blanco/don-julio-blanco-175L.png"
@@ -1068,6 +1092,11 @@
                         "size": "50ml",
                         "price": 3.99,
                         "img": "liquors/tequila/jalisco/1800/1800-blanco/1800-blanco-50ml.png"
+                    },
+                    {
+                      "size": "200ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/1800/1800-blanco/1800-blanco-200ml.png"
                     },
                     {
                       "size": "375ml",
@@ -1573,27 +1602,27 @@
                       {
                         "size": "50ml",
                         "price": 1.40,
-                        "img": "liquors/rum/puerto-rico/bacardi/bacardi-limon/bacardi-limon-50ml.png"
+                        "img": "liquors/rum/puerto-rico/bacardi/bacardi-lemon/bacardi-lemon-50ml.png"
                     },
                     {
                       "size": "200ml",
                       "price": 4.29,
-                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-limon/bacardi-limon-200ml.png"
+                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-lemon/bacardi-lemon-200ml.png"
                     },
                     {
                       "size": "375ml",
                       "price": 7.99,
-                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-limon/bacardi-limon-375ml.png"
+                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-lemon/bacardi-lemon-375ml.png"
                     },
                     {
                       "size": "750ml",
                       "price": 14.99,
-                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-limon/bacardi-limon-750ml.png"
+                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-lemon/bacardi-lemon-750ml.png"
                     },
                     {
                       "size": "1.75L",
                       "price": 22.99,
-                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-limon/bacardi-limon-175L.png"
+                      "img": "liquors/rum/puerto-rico/bacardi/bacardi-lemon/bacardi-lemon-175L.png"
                     }
                     ]
                   },

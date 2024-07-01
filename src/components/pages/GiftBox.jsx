@@ -31,7 +31,7 @@ function GiftBox() {
         return products
             .filter(product => product.modal) // Only include products where modal is true
             .map(product => {
-                const preferredSize = product.sizes.find(size => size.size === "750ml") || product.sizes[0];
+                const preferredSize = product.sizes.find(size => size.size === "750ml gift") || product.sizes.find(size => size.size === "750ml") ||  product.sizes[0];
 
                 if (selectedPrice) {
                     const [minPrice, maxPrice] = selectedPrice.split('-').map(Number);
