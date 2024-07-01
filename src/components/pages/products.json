@@ -2069,6 +2069,104 @@
         ]
       },
       {
+        "type": "liquors",
+        "description": "Liquor is an alcoholic drink produced by distillation of grains, fruit, or vegetables that have already gone through alcoholic fermentation.",
+        "subtypes":[
+          {
+            "subtype": "liquor",
+            "description": "Liquor is an alcoholic drink produced by distillation of grains, fruit, or vegetables that have already gone through alcoholic fermentation.",
+            "products": [
+              {
+                "brand": "Baileys",
+                "products": [
+                  {
+                    "name": "Baileys Original Irish Cream",
+                    "route": "baileys-original-irish-cream",
+                    "modal": false,
+                    "description": "Baileys Irish Cream is an Irish whiskey and cream-based liqueur, made by Gilbeys of Ireland. The trademark is currently owned by Diageo.",
+                    "sizes": [
+                      {
+                        "size": "50ml",
+                        "price": 2.99,
+                        "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-50ml.png"
+                    },
+                    {
+                      "size": "200ml",
+                      "price": 9.99,
+                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-200ml.png"
+                    },
+                    {
+                      "size": "375ml",
+                      "price": 18.99,
+                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-375ml.png"
+                    },
+                    {
+                      "size": "750ml",
+                      "price": 28.99,
+                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-750ml.png"
+                    },
+                    {
+                      "size": "1L",
+                      "price": 42.99,
+                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-1L.png"
+                    },
+                    {
+                      "size": "1.75L",
+                      "price": 56.99,
+                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-175L.png"
+                    }
+                    ]
+                  }
+                ]
+              },
+              {
+                "brand": "Jaggermeister",
+                "products": [
+                  {
+                    "name": "Jaggermeister",
+                    "route": "jaggermeister",
+                    "modal": false,
+                    "description": "Jägermeister is a German digestif made with 56 herbs and spices at a strength of 35% alcohol by volume.",
+                    "sizes": [
+                      {
+                        "size": "20ml",
+                        "price": 0.93,
+                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-20ml.png"
+                      },
+                      {
+                          "size": "50ml",
+                          "price": 1.99,
+                          "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-50ml.png"
+                      },
+                      {
+                        "size": "200ml",
+                        "price": 6.99,
+                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-200ml.png"
+                      },
+                      {
+                        "size": "375ml",
+                        "price": 14.99,
+                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-375ml.png"
+                      },
+                      {
+                        "size": "750ml",
+                        "price": 23.99,
+                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-750ml.png"
+                      },
+                      {
+                        "size": "1.75L",
+                        "price": 44.99,
+                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-175L.png"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "type": "mezcal",
         "description": "Mezcal is a distilled alcoholic beverage made from any type of agave. The word mezcal comes from Nahuatl mexcalli metl and ixcalli which means 'oven-cooked agave'.",
         "subtypes":[
@@ -2164,104 +2262,6 @@
                         "size": "750ml",
                         "price": 250,
                         "img": "liquors/mezcal/mexican/400-conejos/400-conejos-mezcal-tobala/400-conejos-mezcal-tobala-750ml.png"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "liquors",
-        "description": "Liquor is an alcoholic drink produced by distillation of grains, fruit, or vegetables that have already gone through alcoholic fermentation.",
-        "subtypes":[
-          {
-            "subtype": "liquor",
-            "description": "Liquor is an alcoholic drink produced by distillation of grains, fruit, or vegetables that have already gone through alcoholic fermentation.",
-            "products": [
-              {
-                "brand": "Baileys",
-                "products": [
-                  {
-                    "name": "Baileys Original Irish Cream",
-                    "route": "baileys-original-irish-cream",
-                    "modal": false,
-                    "description": "Baileys Irish Cream is an Irish whiskey and cream-based liqueur, made by Gilbeys of Ireland. The trademark is currently owned by Diageo.",
-                    "sizes": [
-                      {
-                        "size": "50ml",
-                        "price": 2.99,
-                        "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-50ml.png"
-                    },
-                    {
-                      "size": "200ml",
-                      "price": 9.99,
-                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-200ml.png"
-                    },
-                    {
-                      "size": "375ml",
-                      "price": 18.99,
-                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-375ml.png"
-                    },
-                    {
-                      "size": "750ml",
-                      "price": 28.99,
-                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-750ml.png"
-                    },
-                    {
-                      "size": "1L",
-                      "price": 42.99,
-                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-1L.png"
-                    },
-                    {
-                      "size": "1.75L",
-                      "price": 56.99,
-                      "img": "liquors/liquors/baileys/baileys-original-irish-cream/baileys-original-irish-cream-175L.png"
-                    }
-                    ]
-                  }
-                ]
-              },
-              {
-                "brand": "Jaggermeister",
-                "products": [
-                  {
-                    "name": "Jaggermeister",
-                    "route": "jaggermeister",
-                    "modal": false,
-                    "description": "Jägermeister is a German digestif made with 56 herbs and spices at a strength of 35% alcohol by volume.",
-                    "sizes": [
-                      {
-                        "size": "20ml",
-                        "price": 0.93,
-                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-20ml.png"
-                      },
-                      {
-                          "size": "50ml",
-                          "price": 1.99,
-                          "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-50ml.png"
-                      },
-                      {
-                        "size": "200ml",
-                        "price": 6.99,
-                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-200ml.png"
-                      },
-                      {
-                        "size": "375ml",
-                        "price": 14.99,
-                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-375ml.png"
-                      },
-                      {
-                        "size": "750ml",
-                        "price": 23.99,
-                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-750ml.png"
-                      },
-                      {
-                        "size": "1.75L",
-                        "price": 44.99,
-                        "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-175L.png"
                       }
                     ]
                   }
