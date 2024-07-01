@@ -18,7 +18,7 @@ const ContactUs = () => {
             <address>
             <strong>El Gato Tuerto Liquors #1</strong><br />
             476 SW 8th Street, Miami, FL 33130<br />
-            <strong>Phone:</strong> 305-860-9999<br />
+            <strong>Phone:</strong> 305-854-8576<br />
             <strong>Email:</strong> <a href="mailto:info@elgatotuerto1.com">info@elgatotuerto1.com</a>
             </address>
         </section>

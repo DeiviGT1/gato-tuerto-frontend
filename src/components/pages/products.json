@@ -13,6 +13,24 @@
                 "brand": "Buchanans",
                 "products": [
                   {
+                    "name": "Buchanans Pineapple",
+                    "description": "Buchanan's Pineapple is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
+                    "route": "buchanans-pineapple",
+                    "modal": false,
+                    "sizes": [
+                      {
+                        "size": "375ml",
+                        "price": 21.99,
+                        "img": "liquors/whiskey/scotch/buchanans/buchanans-pineapple/buchanans-pineapple-375ml.png"
+                      },
+                      {
+                        "size": "750ml",
+                        "price": 39.99,
+                        "img": "liquors/whiskey/scotch/buchanans/buchanans-pineapple/buchanans-pineapple-750ml.png"
+                      }
+                    ]
+                  },
+                  {
                     "name": "Buchanans 12",
                     "description": "Buchanan's 12-year-old Scotch whisky is a blend of Scotland's finest single malt whiskies. It is one of the most iconic and awarded Scotch whisky brands in the world. It has a soft and fruity flavor, with orange and chocolate notes that allow it to be served on the rocks or neat.",
                     "route": "buchanans-12",
@@ -52,6 +70,19 @@
                     ]
                   },
                   {
+                    "name": "Buchanans Master",
+                    "description": "Buchanan's Master is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
+                    "route": "buchanans-master",
+                    "modal": false,
+                    "sizes": [
+                      {
+                        "size": "750ml",
+                        "price": 45.99,
+                        "img": "liquors/whiskey/scotch/buchanans/buchanans-master/buchanans-master-750ml.png"
+                      }
+                    ]
+                  },
+                  {
                     "name": "Buchanans 15",
                     "description": "Buchanan's 15-year-old Scotch whisky is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
                     "route": "buchanans-15",
@@ -77,37 +108,6 @@
                     ]
                   },
                   {
-                    "name": "Buchanans Pineapple",
-                    "description": "Buchanan's Pineapple is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
-                    "route": "buchanans-pineapple",
-                    "modal": false,
-                    "sizes": [
-                      {
-                        "size": "375ml",
-                        "price": 21.99,
-                        "img": "liquors/whiskey/scotch/buchanans/buchanans-pineapple/buchanans-pineapple-375ml.png"
-                      },
-                      {
-                        "size": "750ml",
-                        "price": 39.99,
-                        "img": "liquors/whiskey/scotch/buchanans/buchanans-pineapple/buchanans-pineapple-750ml.png"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Buchanans Master",
-                    "description": "Buchanan's Master is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
-                    "route": "buchanans-master",
-                    "modal": false,
-                    "sizes": [
-                      {
-                        "size": "750ml",
-                        "price": 45.99,
-                        "img": "liquors/whiskey/scotch/buchanans/buchanans-master/buchanans-master-750ml.png"
-                      }
-                    ]
-                  },
-                  {
                     "name": "Buchanans Red Seal",
                     "description": "Buchanan's Red Seal is a blend of Scotland's finest single malt whiskies. It is a whisky of uncommon depth and balance, with a smooth, rich flavor.",
                     "route": "buchanans-red-seal",
@@ -125,44 +125,6 @@
               {
                 "brand": "Johnnie Walker",
                 "products": [
-                  {
-                    "name": "Johnnie Walker Black Label",
-                    "route": "johnnie-walker-black-label",
-                    "modal": true,
-                    "description": "Johnnie Walker Black Label is a true icon, recognized as the benchmark for all other deluxe blends. Created using only whiskies aged for a minimum of 12 years from the four corners of Scotland, Johnnie Walker Black Label has an unmistakably smooth, deep, complex character.",
-                    "sizes": [
-                      {
-                        "size": "50ml",
-                        "price": 4.79,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-50ml.png"
-                      },
-                      {
-                        "size": "200ml",
-                        "price": 11.99,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-200ml.png"
-                      },
-                      {
-                        "size": "375ml",
-                        "price": 17.99,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-375ml.png"
-                      },
-                      {
-                        "size": "750ml",
-                        "price": 34.99,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-750ml.png"
-                      },
-                      {
-                        "size": "1L",
-                        "price": 59.99,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-1L.png"
-                      },
-                      {
-                        "size": "1.75L",
-                        "price": 69.99,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-175L.png"
-                      }
-                    ]
-                  },
                   {
                     "name": "Johnnie Walker Red Label",
                     "route": "johnnie-walker-red-label",
@@ -202,6 +164,58 @@
                     ]
                   },
                   {
+                    "name": "Johnnie Walker Black Label",
+                    "route": "johnnie-walker-black-label",
+                    "modal": true,
+                    "description": "Johnnie Walker Black Label is a true icon, recognized as the benchmark for all other deluxe blends. Created using only whiskies aged for a minimum of 12 years from the four corners of Scotland, Johnnie Walker Black Label has an unmistakably smooth, deep, complex character.",
+                    "sizes": [
+                      {
+                        "size": "50ml",
+                        "price": 4.79,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-50ml.png"
+                      },
+                      {
+                        "size": "200ml",
+                        "price": 11.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-200ml.png"
+                      },
+                      {
+                        "size": "375ml",
+                        "price": 17.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-375ml.png"
+                      },
+                      {
+                        "size": "750ml",
+                        "price": 34.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-750ml.png"
+                      },
+                      {
+                        "size": "1L",
+                        "price": 59.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-1L.png"
+                      },
+                      {
+                        "size": "1.75L",
+                        "price": 69.99,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-black-label/johnnie-walker-black-label-175L.png"
+                      }
+                    ]
+                  },
+
+                  {
+                    "name": "Johnnie Walker High Rye",
+                    "route": "johnnie-walker-high-rye",
+                    "modal": false,
+                    "description": "Johnnie Walker High Rye is a blend of many different malt and grain Scotch whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                    "sizes": [
+                      {
+                        "size": "750ml",
+                        "price": 300,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-high-rye/johnnie-walker-high-rye-750ml.png"
+                      }
+                    ]
+                  },
+                  {
                     "name": "Johnnie Walker Double Black",
                     "route": "johnnie-walker-double-black",
                     "modal": false,
@@ -211,6 +225,19 @@
                         "size": "750ml",
                         "price": 43.99,
                         "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-double-black-label/johnnie-walker-double-black-label-750ml.png"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Johnnie Walker Swing",
+                    "route": "johnnie-walker-swing",
+                    "modal": false,
+                    "description": "Johnnie Walker Swing is a luxurious and smooth whisky with a variety of tastes and textures. It is a blend of up to 35 of the finest aged single malts and grain whiskies. It is a blend of up to 35 of the finest aged single malts and grain whiskies.",
+                    "sizes": [
+                      {
+                        "size": "750ml",
+                        "price": 300,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-swing/johnnie-walker-swing-750ml.png"
                       }
                     ]
                   },
@@ -227,37 +254,8 @@
                       }
                     ]
                   },
-                  {
-                    "name": "Johnnie Walker High Rye",
-                    "route": "johnnie-walker-high-rye",
-                    "modal": false,
-                    "description": "Johnnie Walker High Rye is a blend of many different malt and grain Scotch whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
-                    "sizes": [
-                      {
-                        "size": "750ml",
-                        "price": 300,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-high-rye/johnnie-walker-high-rye-750ml.png"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Johnnie Walker 18 Year",
-                    "route": "johnnie-walker-18-year",
-                    "modal": false,
-                    "description": "Johnnie Walker 18 Year Old is a mellow, complex Scotch. It marries up to 18 different whiskies, each chosen for their remarkable depth of flavor and character. The result is a deep, rich, and complex balance of flavors.",
-                    "sizes": [
-                      {
-                        "size": "200ml",
-                        "price": 300,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-18-year/johnnie-walker-18-year-200ml.png"
-                      },
-                      {
-                        "size": "750ml",
-                        "price": 300,
-                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-18-year/johnnie-walker-18-year-750ml.png"
-                      }
-                    ]
-                  },
+
+                  
                   {
                     "name": "Johnnie Walker Gold Label",
                     "route": "johnnie-walker-gold-label",
@@ -268,6 +266,24 @@
                         "size": "750ml",
                         "price": 89.99,
                         "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-gold-label/johnnie-walker-gold-label-750ml.png"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Johnnie Walker 18 Year",
+                    "route": "johnnie-walker-18-years",
+                    "modal": false,
+                    "description": "Johnnie Walker 18 Year Old is a mellow, complex Scotch. It marries up to 18 different whiskies, each chosen for their remarkable depth of flavor and character. The result is a deep, rich, and complex balance of flavors.",
+                    "sizes": [
+                      {
+                        "size": "200ml",
+                        "price": 300,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-18-years/johnnie-walker-18-years-200ml.png"
+                      },
+                      {
+                        "size": "750ml",
+                        "price": 300,
+                        "img": "liquors/whiskey/scotch/johnnie-walker/johnnie-walker-18-years/johnnie-walker-18-years-750ml.png"
                       }
                     ]
                   },
@@ -501,9 +517,9 @@
                   "description": "Jack Daniel's Tennessee Apple has the unique character of Jack Daniel's Tennessee Whiskey, the crisp taste of green apple and a rewarding finish; it's been described by our master distiller as being 'like freshly picked apple in a glass of Jack Daniel's Tennessee Whiskey'.",
                   "sizes":[
                     {
-                      "size": "50ml",
-                      "price": 2.69,
-                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-apple/jack-daniels-apple-50ml.png"
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-apple/jack-daniels-apple-375ml.png"
                     },
                     {
                       "size": "750ml",
@@ -631,82 +647,82 @@
                 "products":[
                   {
                     "name": "Jose Cuervo Gold Especial",
-                    "route": "jose-cuervo-gold-especial",
+                    "route": "jose-cuervo-especial-gold",
                     "modal": false,
                     "description": "Jose Cuervo Gold is a blend of reposado and younger tequilas. It is a blend of reposado and younger tequilas. It is a blend of reposado and younger tequilas.",
                     "sizes": [
                       {
                         "size": "50ml",
                         "price": 1.87,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-50ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-50ml.png"
                       },
                       {
                         "size": "100ml",
                         "price": 3.19,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-100ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-100ml.png"
                       },
                       {
                         "size": "200ml",
                         "price": 7.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-200ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-200ml.png"
                       },
                       {
                         "size": "375ml",
                         "price": 13.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-375ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-375ml.png"
                       },
                       {
                         "size": "750ml",
                         "price": 22.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-750ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-750ml.png"
                       },
                       {
                         "size": "1L",
                         "price": 27.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-1L.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-1L.png"
                       },
                       {
                         "size": "1.75L",
                         "price": 39.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-gold-especial/jose-cuervo-gold-especial-175L.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-gold/jose-cuervo-especial-gold-175L.png"
                       }
                     ]
                   },
                   {
                     "name": "Jose Cuervo Silver",
-                    "route": "jose-cuervo-blanco",
+                    "route": "jose-cuervo-especial-silver",
                     "modal": false,
                     "description": "Jose Cuervo Silver is a brand of tequila produced by the Jose Cuervo company. It is a blend of reposado, añejo and extra añejo tequilas.",
                     "sizes":[
                       {
                         "size": "50ml",
                         "price": 1.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-50ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-50ml.png"
                       },
                       {
                         "size": "200ml",
                         "price": 7.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-200ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-200ml.png"
                       },
                       {
                         "size": "375ml",
                         "price": 13.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-375ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-375ml.png"
                       },
                       {
                         "size": "750ml",
                         "price": 22.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-750ml.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-750ml.png"
                       },
                       {
                         "size": "1L",
                         "price": 27.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-1L.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-1L.png"
                       },
                       {
                         "size": "1.75L",
                         "price": 39.99,
-                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-blanco-especial/jose-cuervo-blanco-especial-175L.png"
+                        "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-175L.png"
                       }
                     ]
                   }

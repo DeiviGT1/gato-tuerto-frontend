@@ -22,7 +22,7 @@ function Home() {
                         </Link>
                     </div>
                     <div className="feature">
-                        <Link to="/gift-box">
+                        <Link to="/gift-boxes">
                             <img src={exclusiveOffers} alt="Feature 2" />
                             <h2>Exclusive Offers</h2>
                             <p>Get access to special deals and promotions.</p>
