@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../layout/Header";
+//import header css
+import '../layout/Header.css';
 import Footer from "../layout/Footer";
 import Product from "../ui/Product";
 import FilterComponent from "../layout/FilterComponent";
@@ -121,18 +123,22 @@ function Catalog( ) {
     return (
         <>
             <Header />
-            <FilterComponent onFilterChange={handleFilterChange} />
-            <div className="Catalog">
-                {loading ? (
-                    <LoadingSpinner /> // Show loading spinner while loading
-                ) : (
-                    <section>
-                        <div className="card-container">
-                            {renderProducts(allProducts)}
-                        </div>
-                    </section>
-                )}
+            <div className="app-screen">
+                <FilterComponent onFilterChange={handleFilterChange} />
+            <div className="overlay"></div>
+                <div className="Catalog">
+                    {loading ? (
+                        <LoadingSpinner /> // Show loading spinner while loading
+                    ) : (
+                        <section>
+                            <div className="card-container">
+                                {renderProducts(allProducts)}
+                            </div>
+                        </section>
+                    )}
+                </div>
             </div>
+            
             <Footer />
         </>
     );

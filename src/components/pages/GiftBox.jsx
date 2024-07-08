@@ -69,6 +69,7 @@ function GiftBox() {
 
     return (
         <>
+        <div className="app-screen">
             <Header />
             <FilterComponent onFilterChange={handleFilterChange} />
             <div className="Catalog">
@@ -79,6 +80,7 @@ function GiftBox() {
                 </section>
             </div>
             <Footer />
+        </div>
         </>
     );
 }

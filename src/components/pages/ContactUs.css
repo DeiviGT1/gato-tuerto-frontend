@@ -140,3 +140,7 @@
     text-decoration: underline;
   }
   
+  .app-screen{
+    position: relative;
+    top: 10vh;
+}

@@ -12,6 +12,7 @@ function Home() {
     return (
         <>
             <Header />
+            <div className="app-screen">
             <div className="home">
                 <section className="home-features">
                     <div className="feature">
@@ -39,6 +40,7 @@ function Home() {
                 </section>
             </div>
             <Footer />
+            </div>
         </>
     );
 }

@@ -70,3 +70,8 @@
     text-align: center;
     font-weight: lighter;
 }
+
+.app-screen{
+    position: relative;
+    top: 10vh;
+}

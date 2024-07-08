@@ -75,6 +75,7 @@ function Liquor() {
     return (
         <>
             <Header />
+            <div className="app-screen">
             <div className="liquor">
                 <div className="liquor-container">
                     <div className="liquor-image">
@@ -116,6 +117,7 @@ function Liquor() {
                 <img className='modal-img' src="" alt="" />
 
             </Modal>
+            </div>
         </>
     );
 }
