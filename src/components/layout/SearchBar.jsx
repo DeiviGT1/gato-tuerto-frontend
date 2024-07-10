@@ -7,6 +7,7 @@ const SearchBar = ({ placeholder }) => {
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
+            e.target.blur(); // Hide the keyboard
             navigate(`/catalog?search=${inputValue}`);
         }
     };
