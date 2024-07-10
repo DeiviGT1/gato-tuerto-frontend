@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../layout/Header";
-//import header css
-import '../layout/Header.css';
 import Footer from "../layout/Footer";
 import Product from "../ui/Product";
 import FilterComponent from "../layout/FilterComponent";
-import items from './products.json'; // Adjust the path as per your folder structure
-import LoadingSpinner from '../ui/LoadingSpinner'; // Import the LoadingSpinner component
+import items from './products.json'; 
+import LoadingSpinner from '../ui/LoadingSpinner'; 
 import './Catalog.css';
 
-// Helper function to dynamically import images
 const importAll = (r) => {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
     return images;
 };
 
-// Import all images in the specified directory
 const images = importAll(require.context('./liquors', true, /\.(png|jpe?g|svg)$/));
 
-function Catalog( ) {
+function Catalog({ searchTerm = '' }) {
     const [selectedType, setSelectedType] = useState('');
     const [selectedBrand, setSelectedBrand] = useState('');
     const [selectedPrice, setSelectedPrice] = useState('');
     const [orderBy, setOrderBy] = useState('');
-    const [loading, setLoading] = useState(true); // Add loading state
+    const [loading, setLoading] = useState(true);
+
+    const location = useLocation();
+    const query = new URLSearchParams(location.search);
+    const searchQuery = query.get('search') || searchTerm;
 
     useEffect(() => {
-        // Simulate a delay to demonstrate the loading spinner
         const timer = setTimeout(() => {
             setLoading(false);
         }, 1000);
@@ -67,9 +67,13 @@ function Catalog( ) {
         });
         return allProducts;
     };
-    
-    
 
+    const filterProducts = (products) => {
+        return products.filter(product =>
+            product.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+    };
+    
     const sortProducts = (products) => {
         return products.slice().sort((a, b) => {
             const sizeA = a.sizes.find(size => size.size === "750ml");
@@ -112,23 +116,23 @@ function Catalog( ) {
                     name={product.name}
                     price={preferredSize.price}
                     size={preferredSize.size}
-                    img={images[preferredSize.img.replace('liquors/', '')]} // Adjust the path
+                    img={images[preferredSize.img.replace('liquors/', '')]} 
                 />
             );
         });
     };
 
-    const allProducts = getAllProducts();
+    const allProducts = filterProducts(getAllProducts());
 
     return (
         <>
             <Header />
             <div className="app-screen">
                 <FilterComponent onFilterChange={handleFilterChange} />
-            <div className="overlay"></div>
+                <div className="overlay"></div>
                 <div className="Catalog">
                     {loading ? (
-                        <LoadingSpinner /> // Show loading spinner while loading
+                        <LoadingSpinner />
                     ) : (
                         <section>
                             <div className="card-container">
@@ -137,9 +141,8 @@ function Catalog( ) {
                         </section>
                     )}
                 </div>
-            </div>
-            
             <Footer />
+            </div>
         </>
     );
 }

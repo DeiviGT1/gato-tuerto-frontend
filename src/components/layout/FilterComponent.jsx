@@ -43,13 +43,17 @@ function FilterComponent({ onFilterChange }) {
     };
 
     const handleBrandChange = (e) => {
+        if (!selectedType) {
+            window.alert('First you must filter a type of liquor');
+            return;
+        }
         setSelectedBrand(e.target.value);
         onFilterChange(selectedType, e.target.value, selectedPrice, orderBy);
     };
 
     const handlePriceChange = (e) => {
         setSelectedPrice(e.target.value);
-        onFilterChange(selectedType, selectedBrand, e.target.value, orderBy);
+        onFilterChange(selectedType, selectedBrand, e.target.value);
     };
 
     const handleOrderByChange = (e) => {
@@ -83,12 +87,6 @@ function FilterComponent({ onFilterChange }) {
             <div>
                 <label>Price (750ml):</label>
                 <select value={selectedPrice} onChange={handlePriceChange}>
-                $11.99 - $22.99
-$23.99 - $29.99
-$30.99 - $37.99
-$39.99 - $48.99
-$48.99 - $62.99
-$71.99 - $599.99
                     <option value="">All</option>
                     <option value="11.99-22.99">11.99 - 22.99</option>
                     <option value="23-29.99">23 - 29.99</option>

@@ -100,7 +100,8 @@ function Liquor() {
                             <br/>
                             <p className='liquor-description'>{product?.description}</p>
                             <br/>
-                            <p className='liquor-price'>Price: ${selectedPrice}</p>
+                            
+                            <p className='liquor-size'></p> <p className='liquor-price'>Size: {selectedSize} - Price: ${selectedPrice}</p>
                         </div>
                     </div>
                 </div>

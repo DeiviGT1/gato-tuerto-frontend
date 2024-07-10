@@ -33,8 +33,10 @@ function Home() {
                         <Link to="/contact-us">
                             <img src={openHours} alt="Feature 3" />
                             <h2>Store Hours</h2>
-                            <p>Sunday to Thursday: 9:00 AM - 12:00 AM</p>
-                            <p>Friday and Saturday: 9:00 AM - 1:00 AM</p>
+                            <div>
+                                <p>Sunday to Thursday: 9:00 AM - 12:00 AM</p>
+                                <p>Friday and Saturday: 9:00 AM - 1:00 AM</p>
+                            </div>
                         </Link>
                     </div>
                 </section>

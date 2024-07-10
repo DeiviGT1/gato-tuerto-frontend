@@ -41,3 +41,11 @@
     outline: none;
   }
   
+  @media (max-width: 768px) {
+    .FilterComponent {
+      margin: 0;
+      width: 95%;
+      padding: 2.5%;
+  }
+  
+}

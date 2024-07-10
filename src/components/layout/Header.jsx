@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import './Header.css';
 import logo from '../../assets/gatoTuertoLogo.png';
+import logoIso from '../../assets/gatoTuertoLogoIso.png';
+import SearchBar from './SearchBar';
 
 function Header() {
   const location = useLocation();
@@ -31,9 +33,15 @@ function Header() {
             <Link to="/" onClick={() => handleClick("/")} className='logo-link'>
               <img src={logo} alt="logo" className="logo" />
               <p className='logo-name'>
-                <strong>GATO TUERTO</strong>
+                <strong>EL GATO TUERTO</strong>
               </p>
             </Link>
+            
+            <button className='menu-toggle'>
+              <Link to="/">
+                <img src={logoIso} alt="" />
+              </Link>
+            </button>
             <button className="menu-toggle" onClick={toggleMenu}>
               ☰
             </button>
@@ -77,7 +85,7 @@ function Header() {
             </div>
           </div>
           <div className="nav nav-right">
-            <input type="text" placeholder="Search..." className="search-bar" />
+              <SearchBar placeholder="Search products..." />
           </div>
         </header>
       </div>

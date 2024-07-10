@@ -23,7 +23,9 @@ function Product({ route, name, price, size, img }) {
     return (
         <div className="card">
             <Link to={`/product/${route}`}>
-                <img src={img} alt={name} className="card-image" />
+                <div className="card-image">
+                    <img src={img} alt={name} />
+                </div>
                 <div className="card-info">
                     <div className="card-name">
                         <h2 ref={titleRef} className="card-title" style={{ fontSize: `${fontSize}px` }}>{name}</h2>

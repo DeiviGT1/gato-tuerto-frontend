@@ -4,11 +4,8 @@
     justify-content: center;
     align-items: center;
 }
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.Catalog>section{
+    width: 100%;
 }
 
 .card {
@@ -16,18 +13,13 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    width: 15%;
     text-align: center;
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     max-height: 500px;
     display: flex;
     flex-direction: column;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+    width: 100%;
 }
 
 .card-image {
@@ -35,11 +27,6 @@
     height: 70%;
     object-fit: contain;
     border-bottom: 1px solid #ddd;
-}
-
-.card-info {
-    height: 24%;
-    padding: 6%;
 }
 
 .card-info h2 {
@@ -54,13 +41,7 @@
     -webkit-line-clamp: 2; /* Limit to 2 lines */
     -webkit-box-orient: vertical;
     max-height: 2.4em; /* 2 lines * line-height (1.2em) */
-}
-
-
-
-.card-info p {
-    margin: 5px 0;
-    color: #555;
+    font-size: 24px;
 }
 
 .card>a{
@@ -71,11 +52,72 @@
     height: 50%;
 }
 
-.card-metadata{
-    height: 50%;
-}
-
 .app-screen{
     position: relative;
     top: 10vh;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-metadata {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: #555;
+    height: 50%;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust this to fit more columns */
+    gap: 16px;
+}
+
+.card-image {
+    width: auto;
+    height: 65%; /* 70% of the height */
+    overflow: hidden;
+}
+
+.card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-info {
+    height: 30%; /* 30% of the height */
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust this to fit more columns */
+    }
+
+    .Catalog{
+        margin: 2.5%;   
+        width: 95%;    
+    }
+
 }
