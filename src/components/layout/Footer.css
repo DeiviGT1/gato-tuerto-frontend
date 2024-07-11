@@ -33,6 +33,11 @@ footer > div > p {
   margin: 0;
   padding: 0; /* Ensures the map takes the full height and width */
 }
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 .footer-address {
   font-weight: bold;
