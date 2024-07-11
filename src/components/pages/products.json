@@ -611,6 +611,62 @@
                       "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-apple/jack-daniels-apple-750ml.png"
                     }
                   ]
+                },
+                {
+                  "name": "Jack Daniels Triple Mash",
+                  "route": "jack-daniels-triple-mash",
+                  "modal": false,
+                  "description": "Jack Daniel's Tennessee Triple Mash is a limited edition, higher proof release from the Jack Daniel Distillery. This whiskey is made using the same mash bill as Jack Daniel's Old No. 7, but is triple distilled, giving it a higher proof and a slightly different flavor profile.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-triple-mash/jack-daniels-triple-mash-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jack Daniels Bonded",
+                  "route": "jack-daniels-bonded",
+                  "modal": false,
+                  "description": "Jack Daniel's Bottled in Bond is a special release from the Jack Daniel Distillery. This whiskey is made using the same mash bill as Jack Daniel's Old No. 7, but is bottled at 100 proof and aged for at least four years.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-bonded/jack-daniels-bonded-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jack Daniels Single Barrel Rye",
+                  "route": "jack-daniels-single-barrel-rye",
+                  "modal": false,
+                  "description": "Jack Daniel's Single Barrel Rye is a limited release from the Jack Daniel Distillery. This whiskey is made using a mash bill of 70% rye, 18% corn, and 12% malted barley, and is aged in new, charred oak barrels.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-single-barrel-rye/jack-daniels-single-barrel-rye-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jack Daniels Single Barrel Select",
+                  "route": "jack-daniels-single-barrel-select",
+                  "modal": false,
+                  "description": "Jack Daniel's Single Barrel Select is a special release from the Jack Daniel Distillery. This whiskey is made using the same mash bill as Jack Daniel's Old No. 7, but is aged in new, charred oak barrels and bottled at a higher proof.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-single-barrel-select/jack-daniels-single-barrel-select-750ml.png"
+                    }
+                  ]
                 }
               ]
             }
@@ -678,6 +734,34 @@
                       "size": "750ml",
                       "price": 41.99,
                       "img": "liquors/whiskey/irish/jameson/jameson-black-barrel/jameson-black-barrel-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jameson Orange",
+                  "route": "jameson-orange",
+                  "modal": false,
+                  "description": "Jameson Orange is a blend of many different malt and grain Scotch whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/irish/jameson/jameson-orange/jameson-orange-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jameson Cask Mates",
+                  "route": "jameson-cask-mates",
+                  "modal": false,
+                  "description": "Jameson Caskmates is a blend of many different malt and grain Scotch whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/irish/jameson/jameson-cask-mates/jameson-cask-mates-750ml.png"
                     }
                   ]
                 }
