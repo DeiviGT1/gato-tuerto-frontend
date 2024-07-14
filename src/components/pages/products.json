@@ -468,6 +468,137 @@
                   ]
                 }
               ]
+            },
+            {
+              "brand": "Macallan",
+              "products":[
+                {
+                  "name": "Macallan 12 Double Cask",
+                  "route": "macallan-12-double-cask",
+                  "modal": false,
+                  "description": "The Macallan Double Cask 12 Years Old forms part of our Double Cask range which marries the classic Macallan style and the unmistakable sweetness of American oak. This is a fully rounded single malt in perfect balance, with flavors of honey, citrus, and ginger.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-12-double-cask/macallan-12-double-cask-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan 12 Sherry Oak",
+                  "route": "macallan-12-sherry-oak",
+                  "modal": false,
+                  "description": "The Macallan Sherry Oak 12 Years Old forms part of our Sherry Oak range which features a series of single malt whiskies matured exclusively in hand-picked sherry seasoned oak casks from Jerez for richness and complexity. A matured character, the 12 Years Old delivers rich wood spice and dried fruits and a natural rich gold color.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-12-sherry-oak-cask/macallan-12-sherry-oak-cask-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan 15 Double Cask",
+                  "route": "macallan-15-double-cask",
+                  "modal": false,
+                  "description": "The Macallan Double Cask 15 Years Old forms part of our Double Cask range which marries the classic Macallan style and the unmistakable sweetness of American oak. This is a fully rounded single malt in perfect balance, with flavors of honey, citrus, and ginger.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-15-double-cask/macallan-15-double-cask-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan 18 Sherry Oak",
+                  "route": "macallan-18-sherry-oak",
+                  "modal": false,
+                  "description": "The Macallan Sherry Oak 18 Years Old forms part of our Sherry Oak range which features a series of single malt whiskies matured exclusively in hand-picked sherry seasoned oak casks from Jerez for richness and complexity. A matured character, the 18 Years Old delivers rich wood spice and dried fruits and a natural rich gold color.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-18-sherry-oak-cask/macallan-18-sherry-oak-cask-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan Rare Cask",
+                  "route": "macallan-rare-cask",
+                  "modal": false,
+                  "description": "The Macallan Rare Cask is crafted from the finest and rarest sherry seasoned oak casks, unearthed by The Macallan Whisky Mastery Team using their knowledge, skill, passion, and creativity. The result is a whisky of rich mahogany red color, with rich intense flavors of vanilla, raisin, and chocolate.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-rare-cask/macallan-rare-cask-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan A Night On Earth",
+                  "route": "macallan-a-night-on-earth",
+                  "modal": false,
+                  "description": "The Macallan A Night On Earth is a limited edition single malt whisky that celebrates the beauty of the night sky. It is a rich and complex whisky with flavors of dried fruits, ginger, and cinnamon.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-a-night-on-earth/macallan-a-night-on-earth-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan The Harmony Collection Amber Meadow",
+                  "route": "macallan-the-harmony-collection-amber-meadow",
+                  "modal": false,
+                  "description": "The Macallan The Harmony Collection Amber Meadow is a limited edition single malt whisky that celebrates the beauty of the night sky. It is a rich and complex whisky with flavors of dried fruits, ginger, and cinnamon.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-the-harmony-collection-amber-meadow/macallan-the-harmony-collection-amber-meadow-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan The Harmony Collection Intense Arabica",
+                  "route": "macallan-the-harmony-collection-intense-arabica",
+                  "modal": false,
+                  "description": "The Macallan The Harmony Collection Intense Arabica is a limited edition single malt whisky that celebrates the beauty of the night sky. It is a rich and complex whisky with flavors of dried fruits, ginger, and cinnamon.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-the-harmony-collection-intense-arabica/macallan-the-harmony-collection-intense-arabica-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Macallan The Harmony Collection Rich Cacao",
+                  "route": "macallan-the-harmony-collection-rich-cacao",
+                  "modal": false,
+                  "description": "The Macallan The Harmony Collection Rich Cacao is a limited edition single malt whisky that celebrates the beauty of the night sky. It is a rich and complex whisky with flavors of dried fruits, ginger, and cinnamon.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/scotch/macallan/macallan-the-harmony-collection-rich-cacao/macallan-the-harmony-collection-rich-cacao-750ml.png"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -665,6 +796,156 @@
                       "size": "750ml",
                       "price": 300,
                       "img": "liquors/whiskey/bourbon/jack-daniels/jack-daniels-single-barrel-select/jack-daniels-single-barrel-select-750ml.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "brand": "Kentucky Owl",
+              "products": [
+                {
+                  "name": "Kentucky Owl Bourbon Batch",
+                  "route": "kentucky-owl-bourbon-batch",
+                  "modal": false,
+                  "description": "Kentucky Owl Bourbon Batch is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-bourbon-batch/kentucky-owl-bourbon-batch-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Kentucky Owl Rye Batch",
+                  "route": "kentucky-owl-rye-batch",
+                  "modal": false,
+                  "description": "Kentucky Owl Rye Batch is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-rye-batch/kentucky-owl-rye-batch-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Kentucky Owl Takumi",
+                  "route": "kentucky-owl-takumi",
+                  "modal": false,
+                  "description": "Kentucky Owl Takumi is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-takumi/kentucky-owl-takumi-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Kentucky Owl Maighstir",
+                  "route": "kentucky-owl-maighstir",
+                  "modal": false,
+                  "description": "Kentucky Owl Maighstir is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-maighstir/kentucky-owl-maighstir-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Kentucky Owl St Patrick's",
+                  "route": "kentucky-owl-st-patricks",
+                  "modal": false,
+                  "description": "Kentucky Owl St Patrick's is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-st-patricks/kentucky-owl-st-patricks-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Kentucky Owl Confiscated",
+                  "route": "kentucky-owl-confiscated",
+                  "modal": false,
+                  "description": "Kentucky Owl Confiscated is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/kentucky-owl/kentucky-owl-confiscated/kentucky-owl-confiscated-750ml.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "brand": "Colonel E.H. Taylor",
+              "products": [
+                {
+                  "name": "Colonel E.H. Taylor Small Batch",
+                  "route": "colonel-eh-taylor-small-batch",
+                  "modal": false,
+                  "description": "Colonel E.H. Taylor Small Batch is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/colonel-eh-taylor/colonel-eh-taylor-small-batch/colonel-eh-taylor-small-batch-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Colonel E.H. Taylor Single Barrel",
+                  "route": "colonel-eh-taylor-single-barrel",
+                  "modal": false,
+                  "description": "Colonel E.H. Taylor Single Barrel is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/colonel-eh-taylor/colonel-eh-taylor-single-barrel/colonel-eh-taylor-single-barrel-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Colonel E.H Taylor Straight Rye",
+                  "route": "colonel-eh-taylor-straight-rye",
+                  "modal": false,
+                  "description": "Colonel E.H. Taylor Straight Rye is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/colonel-eh-taylor/colonel-eh-taylor-straight-rye/colonel-eh-taylor-straight-rye-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Colonel E.H. Taylor Barrel Proof",
+                  "route": "colonel-eh-taylor-barrel-proof",
+                  "modal": false,
+                  "description": "Colonel E.H. Taylor Barrel Proof is a blend of many different malt and grain Bourbon whiskies, matured for at least 12 years. This rich, smooth blend combines style with substance and tradition.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/whiskey/bourbon/colonel-eh-taylor/colonel-eh-taylor-barrel-proof/colonel-eh-taylor-barrel-proof-750ml.png"
                     }
                   ]
                 }
@@ -912,6 +1193,20 @@
                       "size": "1.75L",
                       "price": 39.99,
                       "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-especial-silver/jose-cuervo-especial-silver-175L.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jose Cuervo Reserva de la Familia",
+                  "route": "jose-cuervo-reserva-de-la-familia",
+                  "modal": false,
+                  "description": "Jose Cuervo Reserva de la Familia is a brand of tequila produced by the Jose Cuervo company. It is a blend of reposado, añejo and extra añejo tequilas.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/jose-cuervo/jose-cuervo-reserva-de-la-familia/jose-cuervo-reserva-de-la-familia-750ml.png"
                     }
                   ]
                 }
@@ -1279,6 +1574,85 @@
                       "size": "1.75L",
                       "price": 669.99,
                       "img": "liquors/tequila/jalisco/don-julio/don-julio-1942/don-julio-1942-175L.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "brand": "Cincoro",
+              "products": [
+                {
+                  "name": "Cincoro Blanco",
+                  "route": "cincoro-blanco",
+                  "modal": false,
+                  "description": "Cincoro Blanco is a high-quality white tequila bottled immediately after distillation to maintain as much of the fresh agave flavor as possible.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-blanco/cincoro-blanco-375ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-blanco/cincoro-blanco-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cincoro Reposado",
+                  "route": "cincoro-reposado",
+                  "modal": false,
+                  "description": "Cincoro Reposado is a high-quality white tequila bottled immediately after distillation to maintain as much of the fresh agave flavor as possible.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-reposado/cincoro-reposado-375ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-reposado/cincoro-reposado-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cincoro Anejo",
+                  "route": "cincoro-anejo",
+                  "modal": false,
+                  "description": "Cincoro Anejo is a high-quality white tequila bottled immediately after distillation to maintain as much of the fresh agave flavor as possible.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-anejo/cincoro-anejo-375ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-anejo/cincoro-anejo-750ml.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cincoro Gold",
+                  "route": "cincoro-gold",
+                  "modal": false,
+                  "description": "Cincoro Gold is a high-quality white tequila bottled immediately after distillation to maintain as much of the fresh agave flavor as possible.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/tequila/jalisco/cincoro/cincoro-gold/cincoro-gold-750ml.png"
                     }
                   ]
                 }
@@ -3064,6 +3438,57 @@
                       "img": "liquors/cognac-brandy/french/hennessy/hennessy-vsop/hennessy-vsop-750ml.png"
                     }
                   ]
+                },
+                {
+                  "name": "Hennessy Paradis",
+                  "route": "hennessy-paradis",
+                  "modal": false,
+                  "description": "Hennessy Paradis is a blend of the finest cognacs, aged to full maturity in oak barrels in the town of Cognac, where Richard Hennessy established his company in 1765.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/cognac-brandy/french/hennessy/hennessy-paradis/hennessy-paradis-750ml.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "brand": "Remy Martin",
+              "products": [
+                {
+                  "name": "Remy Martin VSOP",
+                  "route": "remy-martin-vsop",
+                  "modal": false,
+                  "description": "Remy Martin V.S.O.P is a blend of the finest cognacs, aged to full maturity in oak barrels in the town of Cognac, where Richard Hennessy established his company in 1765.",
+                  "sizes": [
+                    {
+                      "id": "",
+                      "size": "200ml",
+                      "price": 300,
+                      "img": "liquors/cognac-brandy/french/remy-martin/remy-martin-vsop/remy-martin-vsop-200ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/cognac-brandy/french/remy-martin/remy-martin-vsop/remy-martin-vsop-375ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/cognac-brandy/french/remy-martin/remy-martin-vsop/remy-martin-vsop-750ml.png"
+                    },
+                    {
+                      "id": "",
+                      "size": "1.75L",
+                      "price": 300,
+                      "img": "liquors/cognac-brandy/french/remy-martin/remy-martin-vsop/remy-martin-vsop-175L.png"
+                    }
+                  ]
                 }
               ]
             }
@@ -3172,6 +3597,55 @@
                       "size": "1.75L",
                       "price": 44.99,
                       "img": "liquors/liquors/jaggermeister/jaggermeister/jaggermeister-175L.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "brand": "Fireball",
+              "products": [
+                {
+                  "name": "Fireball Cinnamon Whisky",
+                  "route": "fireball-cinnamon-whisky",
+                  "modal": false,
+                  "description": "Fireball Cinnamon Whisky is a Canadian whisky-based liqueur produced by the Sazerac Company. Its foundation is Canadian whisky, and the taste otherwise resembles the candy with a similar name, Ferrara Candy Company's 'Atomic Fireball' candy.",
+                  "sizes": [
+                    {
+                      "id:": "",
+                      "size": "50ml",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-50ml.png"
+                    },
+                    {
+                      "id:": "",
+                      "size": "100ml",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-100ml.png"
+                    },
+                    {
+                      "id:": "",
+                      "size": "200ml",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-200ml.png"
+                    },
+                    {
+                      "id:": "",
+                      "size": "375ml",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-375ml.png"
+                    },
+                    {
+                      "id:": "",
+                      "size": "750ml",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-750ml.png"
+                    },
+                    {
+                      "id:": "",
+                      "size": "1.75L",
+                      "price": 300,
+                      "img": "liquors/liquors/fireball/fireball-cinnamon-whisky/fireball-cinnamon-whisky-175L.png"
                     }
                   ]
                 }
