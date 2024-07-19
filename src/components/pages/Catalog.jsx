@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Product from "../ui/Product";
 import FilterComponent from "../layout/FilterComponent";
-import items from './products.json'; 
-import LoadingSpinner from '../ui/LoadingSpinner'; 
+import items from './products.json';
+import LoadingSpinner from '../ui/LoadingSpinner';
 import './Catalog.css';
 
 const importAll = (r) => {
@@ -24,9 +24,10 @@ function Catalog({ searchTerm = '' }) {
     const [loading, setLoading] = useState(true);
 
     const location = useLocation();
+    const navigate = useNavigate();
     const query = new URLSearchParams(location.search);
     const searchQuery = query.get('search') || searchTerm;
-
+    
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
@@ -35,11 +36,27 @@ function Catalog({ searchTerm = '' }) {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        setSelectedType(params.get('type') || '');
+        setSelectedBrand(params.get('brand') || '');
+        setSelectedPrice(params.get('price') || '');
+        setOrderBy(params.get('orderBy') || '');
+    }, [location.search]);
+
     const handleFilterChange = (newType, newBrand, newPrice, newOrderBy) => {
         setSelectedType(newType);
         setSelectedBrand(newBrand);
         setSelectedPrice(newPrice);
         setOrderBy(newOrderBy);
+
+        const params = new URLSearchParams();
+        if (newType) params.set('type', newType);
+        if (newBrand) params.set('brand', newBrand);
+        if (newPrice) params.set('price', newPrice);
+        if (newOrderBy) params.set('orderBy', newOrderBy);
+
+        navigate({ search: params.toString() });
     };
 
     const getAllProducts = () => {
@@ -128,7 +145,13 @@ function Catalog({ searchTerm = '' }) {
         <>
             <Header />
             <div className="app-screen">
-                <FilterComponent onFilterChange={handleFilterChange} />
+                <FilterComponent
+                    selectedType={selectedType}
+                    selectedBrand={selectedBrand}
+                    selectedPrice={selectedPrice}
+                    orderBy={orderBy}
+                    onFilterChange={handleFilterChange}
+                />
                 <div className="overlay"></div>
                 <div className="Catalog">
                     {loading ? (

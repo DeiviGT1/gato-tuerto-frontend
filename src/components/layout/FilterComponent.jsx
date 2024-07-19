@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './FilterComponent.css';
 import items from '../pages/products.json'; // Adjust the path as per your folder structure
 
-function FilterComponent({ onFilterChange }) {
-    const [selectedType, setSelectedType] = useState('');
-    const [selectedBrand, setSelectedBrand] = useState('');
-    const [selectedPrice, setSelectedPrice] = useState('');
-    const [orderBy, setOrderBy] = useState('');
+function FilterComponent({ selectedType, selectedBrand, selectedPrice, orderBy, onFilterChange }) {
     const [brands, setBrands] = useState([]);
 
     useEffect(() => {
@@ -34,30 +30,21 @@ function FilterComponent({ onFilterChange }) {
         } else {
             setBrands([]);
         }
-        setSelectedBrand(''); // Reset brand selection when type changes
-        onFilterChange(selectedType, '', selectedPrice, orderBy); // Update filter with new type and reset brand
-    }, [selectedType, selectedPrice, orderBy]);
+    }, [selectedType]);
 
     const handleTypeChange = (e) => {
-        setSelectedType(e.target.value);
+        onFilterChange(e.target.value, selectedBrand, selectedPrice, orderBy);
     };
 
     const handleBrandChange = (e) => {
-        if (!selectedType) {
-            window.alert('First you must filter a type of liquor');
-            return;
-        }
-        setSelectedBrand(e.target.value);
         onFilterChange(selectedType, e.target.value, selectedPrice, orderBy);
     };
 
     const handlePriceChange = (e) => {
-        setSelectedPrice(e.target.value);
-        onFilterChange(selectedType, selectedBrand, e.target.value);
+        onFilterChange(selectedType, selectedBrand, e.target.value, orderBy);
     };
 
     const handleOrderByChange = (e) => {
-        setOrderBy(e.target.value);
         onFilterChange(selectedType, selectedBrand, selectedPrice, e.target.value);
     };
 
