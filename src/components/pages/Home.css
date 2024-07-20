@@ -1,83 +1,66 @@
 .home {
-  margin: 2.5% 5%;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.section p {
+  color: black;
+  margin: 0;
+  align-self: center;
+}
+
+.section a > p {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Baskeville', serif;
+  font-size: 1.5em;
+}
+
+.section a > p:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.react-multi-carousel-list {
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.react-multi-carousel-item {
+  width: 120px;
+}
+
+.react-multi-carousel-track {
+  height: 100%;
+}
+
+.react-multi-carousel-track li {
+  height: 100%;
+}
+
+.react-multi-carousel-track li a {
+  height: 100%;
+  display: block;
+}
+
+.carousel-item {
+  height: 100%;
 }
 
 .home-features {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  height: 500px;
 }
 
-.feature {
-  text-align: center;
-  width: 30%;
-  transition: transform 0.2s ease-in-out;
-  margin-bottom: 20px;
-}
-
-.feature:hover {
-  transform: translateY(-5px);
-}
-
-.feature img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.feature h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.feature p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-.app-screen {
-  position: relative;
-  top: 10vh;
-}
-
-/* Responsive Design */
-
-
-@media (max-width: 480px) {
-  .feature {
-      flex-direction: row;
-      width: 100%;
-      text-align: left;
-      margin: 10px 0;
-  }
-
-  .feature img {
-      width: 35%;
-  }
-
-  .feature h2 {
-      font-size: 1.2em;
-      padding: 0 10px;
-  }
-
-  .feature p {
-      font-size: 0.9em;
-  }
-
-  .feature a{
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-
-  .App-footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: 0vh;
-  }
+.react-multi-carousel-list img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
