@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Carousel from "react-multi-carousel";
@@ -10,8 +10,11 @@ import productData from './products.json';
 import bannerSmirnoff from '../../assets/banner-smirnoff.png';
 import bannerCointreau from '../../assets/banner-cointreau.png';
 import bannerGranCentenario from '../../assets/banner-gran-centenario.png';
-import gatoTuertoLogo from '../../assets/gato-tuerto-logo.png';
 import welcomeBanner from '../../assets/banner-welcome.png';
+import bannerSmirnoffCel from '../../assets/banner-smirnoff-cel.png';
+import bannerCointreauCel from '../../assets/banner-cointreau-cel.png';
+import bannerGranCentenarioCel from '../../assets/banner-gran-centenario-cel.png';
+import bannerWelcomeCel from '../../assets/banner-welcome-cel.png';
 
 const importAll = (r) => {
     let images = {};
@@ -22,6 +25,14 @@ const importAll = (r) => {
 const images = importAll(require.context('./liquors', true, /\.(png|jpe?g|svg)$/));
 
 function Home() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 900);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const whiskys = [
         'buchanans-12',
         'buchanans-pineapple',
@@ -32,7 +43,7 @@ function Home() {
         'johnnie-walker-gold-label',
         'johnnie-walker-green-label',
         'johnnie-walker-blue-label',
-        'johnnie-walker-18-years',  
+        'johnnie-walker-18-years',
     ];
 
     const tequilas = [
@@ -46,7 +57,7 @@ function Home() {
         'patron-anejo',
         'patron-extra-anejo',
         'maestro-dobel-diamante',
-    ]
+    ];
 
     const vodkas = [
         'belvedere',
@@ -59,7 +70,7 @@ function Home() {
         'ciroc-pineapple',
         'ciroc-coconut',
         'ciroc-french-vanilla',
-    ]
+    ];
 
     const rums = [
         'bacardi-limon',
@@ -72,7 +83,7 @@ function Home() {
         'bacardi-mango',
         'bacardi-pineapple',
         'bacardi-coconut',
-    ]
+    ];
 
     const responsivee = {
         superLargeDesktop: {
@@ -85,7 +96,7 @@ function Home() {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 5
+            items: 4
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -143,14 +154,13 @@ function Home() {
             <div className="app-screen">
                 <div className="home">
                     <div className='welcome'>
-
                         <div>
-                            <img src={welcomeBanner} alt="" />
+                            <img src={isMobile ? bannerWelcomeCel : welcomeBanner} alt="Welcome Banner" />
                         </div>
                     </div>
                     <section className="home-features whisky">
                         <div className="section">
-                            <p>Check our variety of:&nbsp;</p> 
+                            <p>Check our variety of:&nbsp;</p>
                             <a href="/catalog?type=whiskey">
                                 <p>
                                     Whiskeys
@@ -170,11 +180,11 @@ function Home() {
                         </Carousel>
                     </section>
                     <div className='banner'>
-                        <img src={bannerSmirnoff}  alt="" />
+                        <img src={isMobile ? bannerSmirnoffCel : bannerSmirnoff} alt="Smirnoff Banner" />
                     </div>
                     <section className="home-features tequila">
-                    <div className="section">
-                            <p>Check our variety of:&nbsp;</p> 
+                        <div className="section">
+                            <p>Check our variety of:&nbsp;</p>
                             <a href="/catalog?type=tequila">
                                 <p>
                                     Tequila
@@ -194,11 +204,11 @@ function Home() {
                         </Carousel>
                     </section>
                     <div className='banner'>
-                        <img src={bannerCointreau}  alt="" />
+                        <img src={isMobile ? bannerCointreauCel : bannerCointreau} alt="Cointreau Banner" />
                     </div>
                     <section className="home-features vodka">
-                    <div className="section">
-                            <p>Check our variety of:&nbsp;</p> 
+                        <div className="section">
+                            <p>Check our variety of:&nbsp;</p>
                             <a href="catalog?type=vodka">
                                 <p>
                                     Vodka
@@ -207,7 +217,7 @@ function Home() {
                         </div>
                         <Carousel responsive={responsivee}>
                             {vodkaProducts.map(vodkas => (
-                                <Link to={`/product/${vodkas.route}`} key={vodkas.route}>
+                                <Link to={`/product/{vodkas.route}`} key={vodkas.route}>
                                     <CarouselItem
                                         name={vodkas.name}
                                         imgSrc={vodkas.imgSrc}
@@ -218,11 +228,11 @@ function Home() {
                         </Carousel>
                     </section>
                     <div className='banner'>
-                        <img src={bannerGranCentenario}  alt="" />
+                        <img src={isMobile ? bannerGranCentenarioCel : bannerGranCentenario} alt="Gran Centenario Banner" />
                     </div>
                     <section className="home-features rum">
-                    <div className="section">
-                            <p>Check our variety of:&nbsp;</p> 
+                        <div className="section">
+                            <p>Check our variety of:&nbsp;</p>
                             <a href="catalog?type=rum">
                                 <p>
                                     Rum
@@ -231,7 +241,7 @@ function Home() {
                         </div>
                         <Carousel responsive={responsivee}>
                             {rumProducts.map(rums => (
-                                <Link to={`/product/${rums.route}`} key={rums.route}>
+                                <Link to={`/product/{rums.route}`} key={rums.route}>
                                     <CarouselItem
                                         name={rums.name}
                                         imgSrc={rums.imgSrc}

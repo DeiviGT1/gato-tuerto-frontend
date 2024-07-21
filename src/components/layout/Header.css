@@ -65,8 +65,10 @@ header {
 }
 
 .logo{
-  margin: 2.5% 0;
-  width: 50%;
+  margin: 0;
+  padding: 1% 0;
+  width: auto;
+  height: 90%;
   object-fit: contain;
 }
 
@@ -170,6 +172,7 @@ a:hover::after {
   
   .nav-left {
     width: auto;
+    object-fit: contain;
   }
   
   .nav-center {
@@ -216,7 +219,7 @@ a:hover::after {
   }
   
   .nav-left{
-    width: 40%;
+    width: 50%;
   }
 
   .nav-left>button{
@@ -224,10 +227,10 @@ a:hover::after {
   }
 
   .nav-left>button:nth-child(2){
-    width: 60%;
+    width: auto;
   }
   .nav-left>button:nth-child(3){
-    width: 40%;
+    width: 50%;
   }
 
 
