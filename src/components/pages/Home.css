@@ -18,6 +18,11 @@
   font-weight: 500;
 }
 
+.section>p,
+.section>a>p {
+  font-size: 1.5em;
+}
+
 .banner>img{
   width: 100%;
   object-fit: cover;
@@ -30,7 +35,6 @@
   cursor: pointer;
   text-decoration: underline;
   font-family: 'Baskeville', serif;
-  font-size: 1.5em;
 }
 
 .section a > p:hover {
