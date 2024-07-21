@@ -1,17 +1,27 @@
 .home {
   text-align: center;
+  font-family: 'Baskeville', serif;
 }
 
 .section {
   display: flex;
   justify-content: center;
   margin: 10px 0;
+
 }
 
 .section p {
   color: black;
   margin: 0;
   align-self: center;
+  font-family: 'Baskeville', serif;
+  font-weight: 500;
+}
+
+.banner>img{
+  width: 100%;
+  object-fit: cover;
+
 }
 
 .section a > p {
@@ -29,7 +39,7 @@
 }
 
 .react-multi-carousel-list {
-  height: 400px;
+  height: 80%;
   width: 90%;
   margin: 0 auto;
 }
@@ -57,10 +67,36 @@
 
 .home-features {
   height: 500px;
+  padding-bottom: 20;
 }
 
-.react-multi-carousel-list img {
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
+.welcome{
+  padding: 1% 0;
+}
+
+.home>.welcome{
+  height: 100%;
+}
+
+.home>.welcome>h1{
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'Baskeville', serif;
+  height: 11%;
+}
+
+.home>.welcome>div{
+  height: 89%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home>.welcome>div>img{
+  width: 100%;
+  height: 85%;
+  object-fit: contain;
 }

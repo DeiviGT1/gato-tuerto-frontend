@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import './Header.css';
-import logo from '../../assets/gatoTuertoLogo.png';
-import logoIso from '../../assets/gatoTuertoLogoIso.png';
+import logo from '../../assets/gato-tuerto-logo.png';
+import logoIso from '../../assets/gato-tuerto-logo-iso.png';
 import SearchBar from './SearchBar';
 
 function Header() {

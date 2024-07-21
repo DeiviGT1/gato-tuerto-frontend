@@ -7,6 +7,11 @@ import './Home.css';
 import CarouselItem from "../ui/CarouselItem";
 import { Link } from 'react-router-dom';
 import productData from './products.json';
+import bannerSmirnoff from '../../assets/banner-smirnoff.png';
+import bannerCointreau from '../../assets/banner-cointreau.png';
+import bannerGranCentenario from '../../assets/banner-gran-centenario.png';
+import gatoTuertoLogo from '../../assets/gato-tuerto-logo.png';
+import welcomeBanner from '../../assets/banner-welcome.png';
 
 const importAll = (r) => {
     let images = {};
@@ -54,6 +59,19 @@ function Home() {
         'ciroc-pineapple',
         'ciroc-coconut',
         'ciroc-french-vanilla',
+    ]
+
+    const rums = [
+        'bacardi-limon',
+        'bacardi-superior',
+        'bacardi-gold',
+        'bacardi-anejo',
+        'bacardi-8',
+        'bacardi-reserva-limitada',
+        'bacardi-diez',
+        'bacardi-mango',
+        'bacardi-pineapple',
+        'bacardi-coconut',
     ]
 
     const responsivee = {
@@ -108,12 +126,28 @@ function Home() {
             return { ...product, imgSrc, price: preferredSize.price };
         });
 
+    const rumProducts = productData.types
+        .find(type => type.type === "rum")
+        .subtypes.flatMap(subtype => subtype.products)
+        .flatMap(brand => brand.products)
+        .filter(product => rums.includes(product.route))
+        .map(product => {
+            const preferredSize = product.sizes.find(size => size.size === "750ml") || product.sizes[0];
+            const imgSrc = images[preferredSize.img.replace('liquors/', '')];
+            return { ...product, imgSrc, price: preferredSize.price };
+        });
+
     return (
         <>
             <Header />
             <div className="app-screen">
                 <div className="home">
-                    <h1>Welcome to Gato Tuerto Liquor Store!</h1>
+                    <div className='welcome'>
+
+                        <div>
+                            <img src={welcomeBanner} alt="" />
+                        </div>
+                    </div>
                     <section className="home-features whisky">
                         <div className="section">
                             <p>Check our variety of:&nbsp;</p> 
@@ -135,6 +169,9 @@ function Home() {
                             ))}
                         </Carousel>
                     </section>
+                    <div className='banner'>
+                        <img src={bannerSmirnoff}  alt="" />
+                    </div>
                     <section className="home-features tequila">
                     <div className="section">
                             <p>Check our variety of:&nbsp;</p> 
@@ -156,6 +193,9 @@ function Home() {
                             ))}
                         </Carousel>
                     </section>
+                    <div className='banner'>
+                        <img src={bannerCointreau}  alt="" />
+                    </div>
                     <section className="home-features vodka">
                     <div className="section">
                             <p>Check our variety of:&nbsp;</p> 
@@ -177,7 +217,30 @@ function Home() {
                             ))}
                         </Carousel>
                     </section>
-            
+                    <div className='banner'>
+                        <img src={bannerGranCentenario}  alt="" />
+                    </div>
+                    <section className="home-features rum">
+                    <div className="section">
+                            <p>Check our variety of:&nbsp;</p> 
+                            <a href="catalog?type=rum">
+                                <p>
+                                    Rum
+                                </p>
+                            </a>
+                        </div>
+                        <Carousel responsive={responsivee}>
+                            {rumProducts.map(rums => (
+                                <Link to={`/product/${rums.route}`} key={rums.route}>
+                                    <CarouselItem
+                                        name={rums.name}
+                                        imgSrc={rums.imgSrc}
+                                        price={rums.price}
+                                    />
+                                </Link>
+                            ))}
+                        </Carousel>
+                    </section>
                 </div>
                 <Footer />
             </div>
