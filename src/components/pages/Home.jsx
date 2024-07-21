@@ -10,10 +10,12 @@ import productData from './products.json';
 import bannerSmirnoff from '../../assets/banner-smirnoff.png';
 import bannerCointreau from '../../assets/banner-cointreau.png';
 import bannerGranCentenario from '../../assets/banner-gran-centenario.png';
+import bannerJohnnieWalker from '../../assets/banner-johnnie-walker.png';
 import welcomeBanner from '../../assets/banner-welcome.png';
 import bannerSmirnoffCel from '../../assets/banner-smirnoff-cel.png';
 import bannerCointreauCel from '../../assets/banner-cointreau-cel.png';
 import bannerGranCentenarioCel from '../../assets/banner-gran-centenario-cel.png';
+import bannerJohnnieWalkerCel from '../../assets/banner-johnnie-walker-cel.png';
 import bannerWelcomeCel from '../../assets/banner-welcome-cel.png';
 
 const importAll = (r) => {
@@ -78,12 +80,23 @@ function Home() {
         'bacardi-gold',
         'bacardi-anejo',
         'bacardi-8',
-        'bacardi-reserva-limitada',
-        'bacardi-diez',
-        'bacardi-mango',
         'bacardi-pineapple',
         'bacardi-coconut',
+        'diplomatico-reserva-exclusiva',
+        'diplomatico-planas',
+        'flor-de-cana-18',
+        'brugal-1888'
     ];
+
+    const wines = [
+        'caymus-cabernet-sauvignon',
+        'prisoner-red-blend',
+        'silver-oak-cabernet-sauvignon',
+        'belle-glos-pinot-noir',
+        'bouchard-aine-fils-puligny-montrachet',
+        'tignanello-toscana',
+        'santa-margherita-pinot-grigio',
+    ]
 
     const responsivee = {
         superLargeDesktop: {
@@ -92,11 +105,11 @@ function Home() {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 6
+            items: 5
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 4
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -142,6 +155,17 @@ function Home() {
         .subtypes.flatMap(subtype => subtype.products)
         .flatMap(brand => brand.products)
         .filter(product => rums.includes(product.route))
+        .map(product => {
+            const preferredSize = product.sizes.find(size => size.size === "750ml") || product.sizes[0];
+            const imgSrc = images[preferredSize.img.replace('liquors/', '')];
+            return { ...product, imgSrc, price: preferredSize.price };
+        });
+
+    const wineProducts = productData.types
+        .find(type => type.type === "wine")
+        .subtypes.flatMap(subtype => subtype.products)
+        .flatMap(brand => brand.products)
+        .filter(product => wines.includes(product.route))
         .map(product => {
             const preferredSize = product.sizes.find(size => size.size === "750ml") || product.sizes[0];
             const imgSrc = images[preferredSize.img.replace('liquors/', '')];
@@ -217,7 +241,7 @@ function Home() {
                         </div>
                         <Carousel responsive={responsivee}>
                             {vodkaProducts.map(vodkas => (
-                                <Link to={`/product/{vodkas.route}`} key={vodkas.route}>
+                                <Link to={`/product/${vodkas.route}`} key={vodkas.route}>
                                     <CarouselItem
                                         name={vodkas.name}
                                         imgSrc={vodkas.imgSrc}
@@ -241,11 +265,35 @@ function Home() {
                         </div>
                         <Carousel responsive={responsivee}>
                             {rumProducts.map(rums => (
-                                <Link to={`/product/{rums.route}`} key={rums.route}>
+                                <Link to={`/product/${rums.route}`} key={rums.route}>
                                     <CarouselItem
                                         name={rums.name}
                                         imgSrc={rums.imgSrc}
                                         price={rums.price}
+                                    />
+                                </Link>
+                            ))}
+                        </Carousel>
+                    </section>
+                    <div className='banner'>
+                        <img src={isMobile ? bannerJohnnieWalkerCel : bannerJohnnieWalker} alt="Johnnie Walker Banner" />
+                    </div>
+                    <section className="home-features wine">
+                        <div className="section">
+                            <p>Check our variety of:&nbsp;</p>
+                            <a href="catalog?type=wine">
+                                <p>
+                                    Wine
+                                </p>
+                            </a>
+                        </div>
+                        <Carousel responsive={responsivee}>
+                            {wineProducts.map(wines => (
+                                <Link to={`/product/${wines.route}`} key={wines.route}>
+                                    <CarouselItem
+                                        name={wines.name}
+                                        imgSrc={wines.imgSrc}
+                                        price={wines.price}
                                     />
                                 </Link>
                             ))}
