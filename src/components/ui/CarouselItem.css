@@ -152,3 +152,7 @@
 .react-multiple-carousel__arrow--right{
   z-index: 9;
 }
+
+.react-multiple-carousel__arrow--left{
+  z-index: 9;
+}
