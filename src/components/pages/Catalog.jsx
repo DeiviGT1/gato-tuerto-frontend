@@ -115,17 +115,19 @@ function Catalog({ searchTerm = '' }) {
 
     const renderProducts = (products) => {
         products = sortProducts(products);
-
+    
         return products.map(product => {
             const preferredSize = product.sizes.find(size => size.size === "750ml") || product.sizes[0];
-
+            const totalInventory = product.sizes.reduce((sum, size) => sum + size.inventory, 0);
+            const isOutOfStock = totalInventory === 0;
+    
             if (selectedPrice) {
                 const [minPrice, maxPrice] = selectedPrice.split('-').map(Number);
                 if (preferredSize.price < minPrice || preferredSize.price > maxPrice) {
                     return null; // Skip products outside the selected price range
                 }
             }
-
+    
             return (
                 <Product
                     key={product.route}
@@ -134,10 +136,12 @@ function Catalog({ searchTerm = '' }) {
                     price={preferredSize.price}
                     size={preferredSize.size}
                     img={images[preferredSize.img.replace('liquors/', '')]} 
+                    productClass={`${isOutOfStock ? 'out-of-stock' : ''}`}
                 />
             );
         });
     };
+    
 
     const allProducts = filterProducts(getAllProducts());
 

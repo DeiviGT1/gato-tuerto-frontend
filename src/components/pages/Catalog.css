@@ -121,3 +121,35 @@
     }
 
 }
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.out-of-stock {
+    opacity: 0.5;
+}
+
+.warning-tape {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200%;
+    height: 40px;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    font-weight: bold;
+    z-index: 1;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+.card-image {
+    position: relative;
+}
