@@ -13,7 +13,7 @@ const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <App />
-    <Analytics id="UA-123456789-0" />
-    <SpeedInsights id="123456789" />
+    <SpeedInsights  />
+    <Analytics />
   </BrowserRouter>
 );
